@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="viewportfolio" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f1948a;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Applicant_scenecontroller">
+   <children>
+       <ListView fx:id="portfolioListView" layoutX="23.0" layoutY="79.0" prefHeight="181.0" prefWidth="551.0" />
+      <ComboBox fx:id="applicantIdComboBox2" layoutX="216.0" layoutY="41.0" prefWidth="150.0" />
+      <Label layoutX="248.0" layoutY="10.0" prefHeight="31.0" prefWidth="104.0" text="PORTFOLIO" />
+      <Label layoutX="99.0" layoutY="45.0" text="select applicant id" />
+      <Button layoutX="456.0" layoutY="41.0" mnemonicParsing="false" onAction="#handleViewPortfolio" text="View" />
+      <Label layoutX="271.0" layoutY="278.0" text="recommendation" />
+      <ListView fx:id="recommendationListView" layoutX="19.0" layoutY="304.0" prefHeight="74.0" prefWidth="551.0" />
+      <Button layoutX="421.0" layoutY="274.0" mnemonicParsing="false" onAction="#handleViewRecommendations" text="view recommendations" />
+      <Button layoutX="31.0" layoutY="26.0" mnemonicParsing="false" onAction="#switchtomenu" text="Back" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f1948a;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HR_scenecontroller">
+   <children>
+      <Text layoutX="215.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recommendation" wrappingWidth="195.732421875">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button layoutX="24.0" layoutY="27.0" mnemonicParsing="false" onAction="#switchtohrmenu" text="back" />
+      <Text layoutX="145.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Applicant id">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="126.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recommendation">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <ChoiceBox fx:id="applicantIdChoiceBox" layoutX="277.0" layoutY="107.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="recommendationChoiceBox" layoutX="277.0" layoutY="167.0" prefWidth="150.0" />
+      <Button fx:id="submitrecommendation" layoutX="196.0" layoutY="249.0" mnemonicParsing="false" onAction="#submitRecommendation" text="Submit Recommendations" />
+   </children>
+</AnchorPane>

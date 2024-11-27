@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #f1948a;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.scenecontroller">
+    <children>
+        <Label layoutX="167.0" layoutY="22.0" text="View Applications">
+            <font>
+                <Font size="34.0" />
+            </font>
+        </Label>
+
+        <!-- Job Name Dropdown (ComboBox) -->
+        <Label layoutX="50.0" layoutY="80.0" text="Select Job:" />
+        <ComboBox fx:id="jobComboBox" layoutX="150.0" layoutY="80.0" prefWidth="200.0">
+            <!-- Add job names dynamically -->
+        </ComboBox>
+
+        <!-- Button to Load Applicants -->
+        <Button fx:id="loadButton" layoutX="370.0" layoutY="80.0" onAction="#populate_table" text="Load Applicants" />
+
+        <!-- Table to Display Applicants -->
+        <TableView fx:id="applicantsTable" layoutX="50.0" layoutY="119.0" prefHeight="300.0" prefWidth="500.0">
+            <columns>
+                <!-- Applicant ID Column -->
+                <TableColumn fx:id="idColumn" prefWidth="100.0" text="Applicant ID">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="applicantId" />
+                    </cellValueFactory>
+                </TableColumn>
+                
+                <!-- Applicant Name Column -->
+                <TableColumn fx:id="dateColumn" prefWidth="200.0" text="Date">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="name" />
+                    </cellValueFactory>
+                </TableColumn>
+                
+                <!-- Applicant GPA Column -->
+                <TableColumn fx:id="gpaColumn" prefWidth="100.0" text="GPA">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="gpa" />
+                    </cellValueFactory>
+                </TableColumn>
+
+                <!-- Applicant Experience Column -->
+                <TableColumn fx:id="experienceColumn" prefWidth="100.0" text="Experience">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="experience" />
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+      <Button layoutX="78.0" layoutY="441.0" mnemonicParsing="false" onAction="#switchtomenu" text="Back to Menu" />
+    </children>
+</AnchorPane>

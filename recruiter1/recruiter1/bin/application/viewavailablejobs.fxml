@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="viewavailablejobs" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f1948a;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Applicant_scenecontroller">
+    
+    <!-- ListView to display jobs -->
+    <ListView fx:id="jobsListView" layoutX="20.0" layoutY="12.0" prefHeight="249.0" prefWidth="572.0">
+        <!-- Sample data can be added in the controller -->
+    </ListView>
+
+    <Button fx:id="backButton" layoutX="250.0" layoutY="360.0" text="Back" onAction="#switchtomenu" />
+
+    <!-- ComboBox for job IDs -->
+    <ComboBox fx:id="jobIdComboBox" layoutX="100.0" layoutY="296.0" prefWidth="150.0" promptText="job ids" />
+
+     <Button fx:id="applyButton" layoutX="366.0" layoutY="296.0" mnemonicParsing="false" text="Apply!" onAction="#applyForJob" />
+</AnchorPane>
