@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="switchtomenu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f1948a;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Applicant_scenecontroller">
+    <children>
+        <Label layoutX="191.0" layoutY="53.0" text="APPLICANT MENU">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <RadioButton layoutX="68.0" layoutY="153.0" mnemonicParsing="false" onAction="#viewavailablejobs" text="view available jobs" />
+        <RadioButton layoutX="337.0" layoutY="259.0" mnemonicParsing="false" onAction="#recievemessagehr" text="recieve message from HR" />
+        <RadioButton layoutX="336.0" layoutY="221.0" mnemonicParsing="false" onAction="#sendmessagehr" text="send message to HR" />
+        <RadioButton layoutX="336.0" layoutY="186.0" mnemonicParsing="false" onAction="#recievemessagerecruiter" text="recieve message from recruiter" />
+        <RadioButton layoutX="336.0" layoutY="153.0" mnemonicParsing="false" onAction="#sendmessagerecruiter" text="send message to recruiter" />            
+        <RadioButton layoutX="68.0" layoutY="195.0" mnemonicParsing="false" onAction="#viewstatus" text="view status of job" />
+      <Label layoutX="382.0" layoutY="111.0" text="message">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <RadioButton layoutX="67.0" layoutY="230.0" mnemonicParsing="false" onAction="#viewportfolio" prefHeight="17.0" prefWidth="104.0" text="view portfolio" />
+      <RadioButton layoutX="67.0" layoutY="267.0" mnemonicParsing="false" onAction="#View_appointments" prefHeight="17.0" prefWidth="130.0" text="view Appointment" />
+      <RadioButton layoutX="67.0" layoutY="303.0" mnemonicParsing="false" onAction="#View_Contracts" prefHeight="17.0" prefWidth="130.0" text="view Contract" />
+    </children>
+</AnchorPane>

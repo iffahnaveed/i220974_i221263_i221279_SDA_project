@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f1948a;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HR_scenecontroller">
+   <children>
+      <Text layoutX="146.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Applicant receive message From hr">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <ListView fx:id="msglistview" layoutX="45.0" layoutY="117.0" prefHeight="218.0" prefWidth="511.0" />
+      <Text layoutX="68.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Applicant id">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <ChoiceBox fx:id="applicantIdChoiceBox" layoutX="182.0" layoutY="80.0" prefWidth="150.0" />
+      <Button layoutX="45.0" layoutY="350.0" mnemonicParsing="false" onAction="#switchtohrmenu" text="Back " />
+   </children>
+</AnchorPane>

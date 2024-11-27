@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="sendmessagerecruiter" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f1948a;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Applicant_scenecontroller">
+    
+    <!-- Label for HR ID Dropdown -->
+    <Label layoutX="20.0" layoutY="20.0" text="Select Recruiter ID:" />
+    
+    <!-- Dropdown for HR IDs -->
+    <ComboBox fx:id="recruiterIdComboBox" layoutX="120.0" layoutY="15.0" prefWidth="200.0" />
+    
+    <!-- Label for Message TextArea -->
+    <Label layoutX="20.0" layoutY="70.0" text="Your Message:" />
+    
+    <!-- Text Area for typing the message -->
+    <TextArea fx:id="messageTextArea" layoutX="20.0" layoutY="100.0" prefHeight="200.0" prefWidth="560.0" wrapText="true" />
+    
+    <!-- Button to send the message -->
+    <Button fx:id="sendButton" layoutX="250.0" layoutY="320.0" onAction="#handleSendMessage" text="Send Message" />
+    
+    <!-- Button to refresh HR IDs -->
+    <Button fx:id="refreshButton" layoutX="524.0" layoutY="58.0" onAction="#handleLoadJobId" text="Load" />
+   <ComboBox fx:id="applicationIdComboBox" layoutX="443.0" layoutY="15.0" prefWidth="150.0" />
+   <Label layoutX="334.0" layoutY="20.0" text="Select Application id" />
+   <Button layoutX="270.0" layoutY="361.0" mnemonicParsing="false" text="Back" onAction="#switchtomenu"  />
+</AnchorPane>

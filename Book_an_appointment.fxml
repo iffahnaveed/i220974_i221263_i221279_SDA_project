@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f1948a;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.scenecontroller">
+   <children>
+      <ComboBox fx:id="Applicant_ids_ComboBox" layoutX="102.0" layoutY="100.0" prefWidth="150.0" />
+      <Label layoutX="24.0" layoutY="100.0" prefHeight="25.0" prefWidth="105.0" text="Applicant_id" />
+      <Button layoutX="480.0" layoutY="100.0" mnemonicParsing="false" onAction="#loadApplicantsForHr_Interview" text="Load Applicant" />
+      <ComboBox fx:id="jobComboBox" layoutX="329.0" layoutY="100.0" prefWidth="150.0" />
+      <Label layoutX="277.0" layoutY="100.0" prefHeight="25.0" prefWidth="40.0" text="Job_id" />
+      <Label layoutX="195.0" layoutY="46.0" text="Book an Appointment">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="hourComboBox" layoutX="102.0" layoutY="175.0" prefHeight="25.0" prefWidth="105.0" />
+      <ComboBox fx:id="minuteComboBox" layoutX="211.0" layoutY="175.0" prefHeight="25.0" prefWidth="105.0" />
+      <DatePicker fx:id="appointment_date" layoutX="367.0" layoutY="175.0" />
+      <Label layoutX="24.0" layoutY="175.0" prefHeight="25.0" prefWidth="105.0" text="Time" />
+      <Label layoutX="329.0" layoutY="175.0" prefHeight="25.0" prefWidth="105.0" text="Date" />
+      <TextField fx:id="AppointmentDescription" layoutX="103.0" layoutY="241.0" />
+      <Label layoutX="24.0" layoutY="241.0" prefHeight="25.0" prefWidth="105.0" text="Description" />
+      <Button layoutX="264.0" layoutY="302.0" mnemonicParsing="false" onAction="#handleSubmitButtonAction_Appointment" text="Submit" />
+      <Button layoutX="65.0" layoutY="327.0" mnemonicParsing="false" onAction="#switchtomenu" text="Back to Menu" />
+   </children>
+</AnchorPane>
